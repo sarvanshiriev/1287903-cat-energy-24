@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Сарван Шириев](https://up.htmlacademy.ru/adaptive/24/user/1287903).
-* Наставник: `Неизвестно`.
+* Наставник:[Дмитрий Беллавин](https://htmlacademy.ru/profile/bellavin)
 
 ---
 
