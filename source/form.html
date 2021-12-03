@@ -44,110 +44,99 @@
                     Заполните анкету, и мы подберем программу питания для вашего кота
                 </h2>
                 <form class="form__programm" action="https://echo.htmlacademy.ru" method="get" name="form">
-                    <fieldset>
+                    <fieldset class="form__data">
                         <legend class="visually-hidden">Данные о питомце</legend>
                         <ul class="form__list">
                             <li class="form__item">
-                                <label for="name">
-                                    <span class="form__text">
-                                        Имя*
-                                    </span>
+                                <label for="name" class="form__filter">
+                                    Имя*
                                 </label>
-                                <input type="text" id="name" name="user__name" value="Барсик" />
+                                <input class="form__input" type="text" id="name" name="user__name" value="Барсик" />
                             </li>
                             <li class="form__item">
-                                <label for="weight">
-                                    <span class="form__text">
-                                        Вес(кг)*
-                                    </span>
+                                <label for="weight" class="form__filter">
+                                    Вес(кг)*
                                 </label>
-                                <input type="number" id="weight" name="user__weight" value="7" />
+                                <input class="form__input" type="number" id="weight" name="user__weight" value="7" />
                             </li>
                             <li class="form__item">
-                                <label for="age">
-                                    <span class="form__text">
-                                        Возраст(лет)*
-                                    </span>
+                                <label for="age" class="form__filter">
+                                    Возраст(лет)*
                                 </label>
-                                <input type="number" id="age" name="user__age" value="7" />
+                                <input class="form__input" type="number" id="age" name="user__age" value="7" />
                             </li>
                         </ul>
                     </fieldset>
-                    <fieldset>
+                    <fieldset class="form__result">
                         <legend class="visually-hidden">Желаемый результат</legend>
                         <ul class="form__list">
                             <li class="form__item">
-                                <label for="slimming">
-                                    <input type="radio" id="slimming" name="slimming" checked />
-                                    <span class="form__text">Похудение</span>
+                                <input class="form__input" type="radio" id="slimming" name="slimming" checked />
+                                <label for="slimming" class="form__filter">
+                                    Похудение
                                 </label>
                             </li>
                             <li class="form__item">
-                                <label for="gain">
-                                    <input type="radio" id="gain" name="gain" />
-                                    <span class="form__text">Набор массы</span>
+                                <input class="form__input" type="radio" id="gain" name="gain" />
+                                <label for="gain" class="form__filter">
+                                    Набор массы
                                 </label>
                             </li>
                             <li class="form__item">
-                                <label for="advice">
-                                    <input type="radio" id="advice" name="advice" />
-                                    <span class="form__text">Не знаю (Нужен ваш совет)</span>
+                                <input class="form__input" type="radio" id="advice" name="advice" />
+                                <label for="advice" class="form__filter">
+                                    Не знаю (Нужен ваш совет)
                                 </label>
                             </li>
                         </ul>
                     </fieldset>
-                    <fieldset>
+                    <fieldset class="form__owner">
                         <legend class="form__heading">Контактные данные(владельца кота)</legend>
                         <ul class="form__list">
                             <li class="form__item">
-                                <label for="email">
-                                    <span class="form__text">
-                                        E-MAIL:*
-                                    </span>
+                                <label for="email" class="form__filter">
+                                    e-mail:*
                                 </label>
-                                <input type="email" id="email" name="user__email" value="kuklachev@gmail.com" />
+                                <input class="form__input" type="email" id="email" name="user__email" value="kuklachev@gmail.com" />
                             </li>
                             <li class="form__item">
-                                <label for="number">
-                                    <span class="form__text">
-                                        ТЕЛЕФОН*
-                                    </span>
+                                <label for="number" class="form__filter">
+                                    телефон*
                                 </label>
-                                <input type="tel" id="number" name="user__number" value="8(960)900-60-90" />
+                                <input class="form__input" type="tel" id="number" name="user__number" value="8(960)900-60-90" />
                             </li>
                         </ul>
                     </fieldset>
-                    <fieldset>
+                    <fieldset class="form__comment">
                         <legend class="form__heading">Комментарий</legend>
-                        <label for="comments">
-                            <textarea id="comments" name="user__message">Расскажите обо всех повадках кота</textarea>
-                        </label>
+                        <label for="comments" class="form__filter"> </label>
+                        <textarea id="comments" name="user__message">Расскажите обо всех повадках кота</textarea>
                     </fieldset>
-                    <fieldset>
+                    <fieldset class="form__additionally">
                         <legend class="form__heading">Дополнительно</legend>
                         <ul class="form__list">
                             <li class="form__item">
-                                <label for="sweetener">
-                                    <input id="sweetener" type="checkbox" name="sweetener" checked />
-                                    <span class="form__text">Сахарозаменитель</span>
+                                <input class="form__input" id="sweetener" type="checkbox" name="sweetener" checked />
+                                <label for="sweetener" class="form__filter">
+                                    Сахарозаменитель
                                 </label>
                             </li>
                             <li class="form__item">
-                                <label for="water">
-                                    <input id="water" type="checkbox" name="water" />
-                                    <span class="form__text">Питьевая вода</span>
+                                <input class="form__input" id="water" type="checkbox" name="water" />
+                                <label for="water" class="form__filter">
+                                    Питьевая вода
                                 </label>
                             </li>
                             <li class="form__item">
-                                <label for="milk">
-                                    <input id="milk" type="checkbox" name="milk" />
-                                    <span class="form__text">Молоко</span>
+                                <input class="form__input" id="milk" type="checkbox" name="milk" />
+                                <label for="milk" class="form__filter">
+                                    Молоко
                                 </label>
                             </li>
                             <li class="form__item">
-                                <label for="vitamin">
-                                    <input id="vitamin" type="checkbox" name="vitamin" />
-                                    <span class="form__text">Витамины</span>
+                                <input class="form__input" id="vitamin" type="checkbox" name="vitamin" />
+                                <label for="vitamin" class="form__filter">
+                                    Витамины
                                 </label>
                             </li>
                         </ul>
