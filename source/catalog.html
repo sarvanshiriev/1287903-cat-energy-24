@@ -6,41 +6,43 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body class="page__body">
-        <header class="page-header">
-            <a class="page-header__logo" href="index.html">
-                <img src="img/logo-mobile.png" width="33" height="37" alt="Кэт лого" />
-            </a>
-            <h1 class="page-header__title">Кэт Энерджи</h1>
-            <nav class="main-nav">
-                <button class="main-nav__toggle" type="button">
-                    <span class="visually-hidden" hidden>Открыть меню</span>
-                </button>
-                <div class="main-nav__wrapper">
-                    <ul class="main-nav__list">
-                        <li class="main-nav__item">
-                            <a class="main-nav__link" href="index.html">
-                                Главная
-                            </a>
-                        </li>
-                        <li class="main-nav__item">
-                            <a class="main-nav__link" href="catalog.html">
-                                Каталог продукции
-                            </a>
-                        </li>
-                        <li class="main-nav__item">
-                            <a class="main-nav__link" href="#">
-                                Подбор программы
-                            </a>
-                        </li>
-                    </ul>
+      <header class="page-header">
+        <div class="page-header__container">
+              <a class="page-header__logo" href="index.html">
+                  <img src="img/logo-mobile.png" width="33" height="37" alt="Кэт лого" />
+              </a>
+              <h1 class="page-header__title">Кэт Энерджи</h1>
+              <nav class="main-nav">
+                  <button class="main-nav__toggle" type="button">
+                      <span class="visually-hidden" hidden>Открыть меню</span>
+                  </button>
                 </div>
-            </nav>
-        </header>
-        <main class="catalog">
-            <h1 class="catalog__title">
+                  <div class="main-nav__wrapper">
+                      <ul class="main-nav__list">
+                          <li class="main-nav__item">
+                              <a class="main-nav__link" href="index.html">
+                                  Главная
+                              </a>
+                          </li>
+                          <li class="main-nav__item">
+                              <a class="main-nav__link" href="catalog.html">
+                                  Каталог продукции
+                              </a>
+                          </li>
+                          <li class="main-nav__item">
+                              <a class="main-nav__link" href="form.html">
+                                  Подбор программы
+                              </a>
+                          </li>
+                      </ul>
+                  </div>
+              </nav>
+          </header>
+        <main class="page-catalog">
+            <section class="catalog">
+              <h1 class="catalog__title title">
                 Каталог продукции
             </h1>
-            <section class="catalog__wrapper">
                 <ul class="catalog__list">
                     <li class="catalog__item">
                         <a class="catalog__link">
@@ -210,12 +212,12 @@
                         </div>
                         <button class="button button--order" type="button">Заказать</button>
                     </li>
-                    <li class="catalog__item catalog__item--more">
-                        <a class="catalog__link-all" href="#">Показать еще 100500 товаров</a>
-                        <p class="catalog__text">На самом деле вкусов гораздо больше!</p>
-                        <button class="button button--more">Показать всё</button>
-                    </li>
                 </ul>
+                <div class="catalog__item-more">
+                  <a class="catalog__link-all" href="#">Показать еще 100500 товаров</a>
+                  <p class="catalog__text">На самом деле вкусов гораздо больше!</p>
+                  <button class="button button--more">Показать всё</button>
+                </div>
             </section>
             <section class="recommended">
                 <h2 class="recommended__title">Дополнительные товары</h2>
@@ -255,41 +257,49 @@
                 </ul>
             </section>
             <section class="promotion">
-                <h2 class="promotion__title">Закажите все и получите чехол для кота в подарок!</h2>
+              <div class="promotion__container">
+              <a class="promotion__link">Закажите все<br> и получите чехол для кота в подарок!</a>
+            </div>
             </section>
             <section class="cooperation">
+              <div class="cooperation__container">
                 <h2 class="cooperation__caption">
-                    Приглашаем к сотрудничеству дилеров!
+                    Приглашаем<br> к сотрудничеству дилеров!
                 </h2>
                 <address class="cooperation__adress">
-                    <img class="cooperation__adress-image" src="img/map.png" width="320" height="362" alt="Карта" />
-                    <p class="cooperation__adress-text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+                  <p class="cooperation__adress-text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
                 </address>
+              </div>
+              <div class="cooperation__map">
+                    <img class="cooperation__adress-image" src="img/map.png" width="320" height="362" alt="Карта" />
+                  </div>
             </section>
         </main>
         <footer class="page-footer">
-            <div class="page-footer__wrapper">
-                <a class="page-footer__logo-text" href="index.html">
-                    <img src="img/logo.svg" width="128" height="24" alt="Кэт энерджи" />
-                </a>
-                <div class="social">
-                    <h2 class="visually-hidden" hidden>Социальные сети</h2>
-                    <ul class="social__list">
-                        <li class="social__item">
-                            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в контакте</a>
-                        </li>
-                        <li class="social__item">
-                            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в инстаграмме</a>
-                        </li>
-                        <li class="social__item">
-                            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в фейсбуке</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="copyright">
-                    <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-                </div>
+          <div class="page-footer__wrapper">
+            <div class="page-footer__logo">
+              <a class="page-footer__logo__text" href="index.html">
+                  <img src="img/logo.svg" width="128" height="24" alt="Кэт энерджи" />
+              </a>
             </div>
-        </footer>
+              <div class="social">
+                  <h2 class="visually-hidden" hidden>Социальные сети</h2>
+                  <ul class="social__list">
+                      <li class="social__item">
+                          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в контакте</a>
+                      </li>
+                      <li class="social__item">
+                          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в инстаграмме</a>
+                      </li>
+                      <li class="social__item">
+                          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в фейсбуке</a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="copyright">
+                  <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              </div>
+          </div>
+      </footer>
     </body>
 </html>
