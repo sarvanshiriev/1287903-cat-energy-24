@@ -3,20 +3,22 @@
     <head>
         <meta charset="utf-8" />
         <title>HTML Academy: Кэт энерджи</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body class="page__body">
         <header class="page-header">
+          <section class="page-header__layout">
       <div class="page-header__container">
             <a class="page-header__logo" href="index.html">
                 <img src="img/logo-mobile.png" width="33" height="37" alt="Кэт лого" />
             </a>
             <h1 class="page-header__title">Кэт Энерджи</h1>
+          </div>
             <nav class="main-nav">
-                <button class="main-nav__toggle" type="button">
-                    <span class="visually-hidden" hidden>Открыть меню</span>
-                </button>
-              </div>
+              <button class="main-nav__toggle" type="button">
+                <span class="visually-hidden" >Открыть меню</span>
+            </button>
                 <div class="main-nav__wrapper">
                     <ul class="main-nav__list">
                         <li class="main-nav__item">
@@ -37,9 +39,11 @@
                     </ul>
                 </div>
             </nav>
+          </section>
         </header>
         <main class="page-main">
             <section class="intro">
+              <div class="intro__container">
               <div class="intro__wrapper">
                 <h1 class="intro__title">
                     Функциональное питание для котов
@@ -54,6 +58,7 @@
                 <button class="button button--intro">
                     Подобрать программу
                 </button>
+              </div>
             </section>
             <section class="purpose">
                 <div class="purpose__wrapper">
