@@ -1,12 +1,35 @@
+.purpose{
+  @media (min-width: @desktop-width){
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    column-gap: 80px;
+    margin: 0 auto;
+    width: 1220px;
+  }
+}
 .purpose__wrapper{
   width: 280px;
   background-color: @gray;
   margin: 0 auto;
   margin-bottom: 20px;
+  @media (min-width: @tablet-width){
+    width: 708px;
+    padding-top: 77px;
+    padding-bottom: 57px;
+  }
+  @media (min-width: @desktop-width){
+    width: 570px;
+    padding-bottom: 59px;
+    margin: 0;
+  }
 }
 .purpose__container{
   display: flex;
   margin-left: 20px;
+  align-items: center;
+  @media (min-width: @tablet-width){
+    margin-left: 53px;
+  }
 }
 .purpose__caption{
   font-family: Oswald;
@@ -14,13 +37,34 @@ font-style: normal;
 font-weight: normal;
 font-size: 24px;
 line-height: 37px;
-text-transform: uppercase
+text-transform: uppercase;
+@media (min-width: @tablet-width){
+font-size: 36px;
+line-height: 36px;
+order: -1;
+margin: 0;
+}
+@media (min-width: @desktop-width){
+  order: 1;
+}
 }
 .purpose__text{
 line-height: 18px;
 margin-left: 20px;
 width: 227px;
 margin-bottom: 42px;
+@media (min-width: @tablet-width){
+font-size: 16px;
+line-height: 24px;
+color: @black;
+width: 340px;
+margin-left: 53px;
+margin-top: 24px;
+margin-bottom: 52px;}
+@media (min-width: @desktop-width){
+  width: 467px;
+  margin-bottom: 27px;
+}
 }
 .purpose__button{
   background-color: transparent;
@@ -33,4 +77,9 @@ margin-bottom: 42px;
   text-transform: uppercase;
   padding: 0;
   margin-left: 20px;
+  @media (min-width: @tablet-width){
+    font-size: 20px;
+line-height: 30px;
+margin-left: 53px;
+  }
 }

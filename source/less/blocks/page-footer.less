@@ -2,17 +2,38 @@
   background-color: @gray;
   padding-top: 39px;
   padding-bottom: 32px;
+  @media (min-width:@tablet-width){
+    padding-top: 58px;
+  padding-bottom: 55px;
+  }
+  @media (min-width:@desktop-width){
+
+  }
 }
 .page-footer__wrapper{
 width: 280px;
 margin: 0 auto;
+@media (min-width:@tablet-width){
+  width: 708px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width:@desktop-width){
+  width: 1220px;
+}
 }
 .page-footer__logo{
 margin-left: 75px;
 margin-bottom: 57px;
+@media (min-width:@tablet-width){
+  margin: 0;
+}
 }
 .social{
   margin-bottom: 53px;
+  @media (min-width:@tablet-width){
+    margin: 0;
+  }
 }
 .social__list{
   display: flex;
