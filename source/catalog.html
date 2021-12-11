@@ -8,37 +8,39 @@
     </head>
     <body class="page__body">
       <header class="page-header">
-        <div class="page-header__container">
-              <a class="page-header__logo" href="index.html">
-                  <img src="img/logo-mobile.png" width="33" height="37" alt="Кэт лого" />
-              </a>
-              <h1 class="page-header__title">Кэт Энерджи</h1>
-              <nav class="main-nav">
-                  <button class="main-nav__toggle" type="button">
-                      <span class="visually-hidden" >Открыть меню</span>
-                  </button>
-                </div>
-                  <div class="main-nav__wrapper">
-                      <ul class="main-nav__list">
-                          <li class="main-nav__item">
-                              <a class="main-nav__link" href="index.html">
-                                  Главная
-                              </a>
-                          </li>
-                          <li class="main-nav__item">
-                              <a class="main-nav__link" href="catalog.html">
-                                  Каталог продукции
-                              </a>
-                          </li>
-                          <li class="main-nav__item">
-                              <a class="main-nav__link" href="form.html">
-                                  Подбор программы
-                              </a>
-                          </li>
-                      </ul>
-                  </div>
-              </nav>
-          </header>
+        <section class="page-header__layout">
+    <div class="page-header__container">
+          <a class="page-header__logo" href="index.html">
+              <img src="img/logo-mobile.png" width="33" height="37" alt="Кэт лого" />
+          </a>
+          <h1 class="page-header__title">Кэт Энерджи</h1>
+        </div>
+          <nav class="main-nav">
+            <button class="main-nav__toggle" type="button">
+              <span class="visually-hidden" >Открыть меню</span>
+          </button>
+              <div class="main-nav__wrapper">
+                  <ul class="main-nav__list">
+                      <li class="main-nav__item">
+                          <a class="main-nav__link" href="index.html">
+                              Главная
+                          </a>
+                      </li>
+                      <li class="main-nav__item">
+                          <a class="main-nav__link" href="catalog.html">
+                              Каталог продукции
+                          </a>
+                      </li>
+                      <li class="main-nav__item">
+                          <a class="main-nav__link" href="form.html">
+                              Подбор программы
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+          </nav>
+        </section>
+      </header>
         <main class="page-catalog">
             <section class="catalog">
               <h1 class="catalog__title title">
@@ -213,14 +215,17 @@
                         </div>
                         <button class="button button--order" type="button">Заказать</button>
                     </li>
+                    <li class="catalog__item">
+                      <div class="catalog__item-more">
+                        <a class="catalog__link-all" href="#">Показать еще 100500 товаров</a>
+                        <p class="catalog__text">На самом деле вкусов гораздо больше!</p>
+                        <button class="button button--more">Показать всё</button>
+                      </div>
+                    </li>
                 </ul>
-                <div class="catalog__item-more">
-                  <a class="catalog__link-all" href="#">Показать еще 100500 товаров</a>
-                  <p class="catalog__text">На самом деле вкусов гораздо больше!</p>
-                  <button class="button button--more">Показать всё</button>
-                </div>
             </section>
             <section class="recommended">
+              <div class="recommended__wraper">
                 <h2 class="recommended__title">Дополнительные товары</h2>
                 <ul class="recommended__list">
                     <li class="recommended__link">
@@ -229,7 +234,7 @@
                             <span class="recommended__number">1 упаковка(100 г)</span>
                             <span class="recommended__price">200 Р.</span>
                         </div>
-                        <button class="button button--order" type="button">Заказать</button>
+                        <button class="button button--order button--recommended" type="button">Заказать</button>
                     </li>
                     <li class="recommended__link">
                         <h3 class="recommended__name">Питьевая вода</h3>
@@ -237,7 +242,7 @@
                             <span class="recommended__number">5 литров</span>
                             <span class="recommendedr__price">50 Р.</span>
                         </div>
-                        <button class="button button--order" type="button">Заказать</button>
+                        <button class="button button--order button--recommended" type="button">Заказать</button>
                     </li>
                     <li class="recommended__link">
                         <h3 class="recommended__name">Молоко</h3>
@@ -245,7 +250,7 @@
                             <span class="recommended__number">1 литр</span>
                             <span class="recommended__price">100 Р.</span>
                         </div>
-                        <button class="button button--order" type="button">Заказать</button>
+                        <button class="button button--order button--recommended" type="button">Заказать</button>
                     </li>
                     <li class="recommended__link">
                         <h3 class="recommended__name">Витамины</h3>
@@ -253,13 +258,12 @@
                             <span class="recommended__number">1 упаковка(30 г)</span>
                             <span class="recommended__price">300 Р.</span>
                         </div>
-                        <button class="button button--order" type="button">Заказать</button>
+                        <button class="button button--order button--recommended" type="button">Заказать</button>
                     </li>
                 </ul>
-            </section>
-            <section class="promotion">
-              <div class="promotion__container">
-              <a class="promotion__link">Закажите все<br> и получите чехол для кота в подарок!</a>
+              </div>
+              <div class="recommended__promotion">
+              <a class="recommended__promotion__link">Закажите все<br> и получите чехол для кота в подарок!</a>
             </div>
             </section>
             <section class="cooperation">
@@ -268,7 +272,8 @@
                     Приглашаем<br> к сотрудничеству дилеров!
                 </h2>
                 <address class="cooperation__adress">
-                  <p class="cooperation__adress-text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+                  <p class="cooperation__adress-text">ул. Большая Конюшенная, д. 19/8</p>
+                  <p class="cooperation__adress-text"> Санкт-Петербург</p>
                 </address>
               </div>
               <div class="cooperation__map">

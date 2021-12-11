@@ -12,11 +12,13 @@
   @media (min-width:@tablet-width){
     width: 708px;
     margin-bottom: 56px;
+    padding-top: 60px;
   }
   @media (min-width:@desktop-width){
     width: 405px;
     padding: 60px 60px 56px 80px;
     border: 2px solid red;
+    background-color: @white;
   }
 }
 .cooperation__map{
@@ -43,7 +45,7 @@ color: @black-title;
 }
 .cooperation__adress{
 line-height: 20px;
-width: 139px;
+width: 155px;
 margin-top: 26px;
 margin-bottom: 26px;
 font-style: normal;
@@ -53,6 +55,9 @@ font-size: 16px;
 line-height: 20px;
 text-align: right;
 margin: 0;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
 }
 @media (min-width:@desktop-width){
   text-align: left;
