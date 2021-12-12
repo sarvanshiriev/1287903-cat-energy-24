@@ -8,37 +8,39 @@
     </head>
     <body class="page__body">
       <header class="page-header">
-        <div class="page-header__container">
-              <a class="page-header__logo" href="index.html">
-                  <img src="img/logo-mobile.png" width="33" height="37" alt="Кэт лого" />
-              </a>
-              <h1 class="page-header__title">Кэт Энерджи</h1>
-              <nav class="main-nav">
-                  <button class="main-nav__toggle" type="button">
-                      <span class="visually-hidden" >Открыть меню</span>
-                  </button>
-                </div>
-                  <div class="main-nav__wrapper">
-                      <ul class="main-nav__list">
-                          <li class="main-nav__item">
-                              <a class="main-nav__link" href="index.html">
-                                  Главная
-                              </a>
-                          </li>
-                          <li class="main-nav__item">
-                              <a class="main-nav__link" href="catalog.html">
-                                  Каталог продукции
-                              </a>
-                          </li>
-                          <li class="main-nav__item">
-                              <a class="main-nav__link" href="form.html">
-                                  Подбор программы
-                              </a>
-                          </li>
-                      </ul>
-                  </div>
-              </nav>
-          </header>
+        <section class="page-header__layout">
+    <div class="page-header__container">
+          <a class="page-header__logo" href="index.html">
+              <img src="img/logo-mobile.png" width="33" height="37" alt="Кэт лого" />
+          </a>
+          <h1 class="page-header__title">Кэт Энерджи</h1>
+        </div>
+          <nav class="main-nav">
+            <button class="main-nav__toggle" type="button">
+              <span class="visually-hidden" >Открыть меню</span>
+          </button>
+              <div class="main-nav__wrapper">
+                  <ul class="main-nav__list">
+                      <li class="main-nav__item">
+                          <a class="main-nav__link" href="index.html">
+                              Главная
+                          </a>
+                      </li>
+                      <li class="main-nav__item">
+                          <a class="main-nav__link" href="catalog.html">
+                              Каталог продукции
+                          </a>
+                      </li>
+                      <li class="main-nav__item">
+                          <a class="main-nav__link" href="form.html">
+                              Подбор программы
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+          </nav>
+        </section>
+      </header>
         <main class="page-form">
             <section class="form">
                 <h1 class="form__title title">
@@ -73,7 +75,7 @@
                     </fieldset>
                     <fieldset class="form__result">
                         <legend class="visually-hidden" hidden>Желаемый результат</legend>
-                        <ul class="form__list">
+                        <ul class="form__list form__list--result">
                             <li class="form__item form__item--result">
                                 <input class="form__input" type="radio" id="slimming" name="slimming" checked />
                                 <label for="slimming" class="form__filter ">
@@ -118,7 +120,7 @@
                     </fieldset>
                     <fieldset class="form__additionally">
                         <legend class="form__heading">Дополнительно</legend>
-                        <ul class="form__list">
+                        <ul class="form__list form__list--additionally">
                             <li class="form__item form__item--additionally">
                                 <input class="form__input" id="sweetener" type="checkbox" name="sweetener" checked />
                                 <label for="sweetener" class="form__filter form__filter--product">
