@@ -247,11 +247,13 @@ color: @dark-gray;
   align-items: center;
 }
 .form__list--additionally{
+  @media (min-width:@tablet-width){
   display: grid;
   grid-template-columns: 220px 220px;
   grid-template-rows: 40px 40px;
   column-gap: 124px;
   row-gap: 32px;
+  }
   @media (min-width: @desktop-width){
     grid-template-columns: 221px 221px 221px 221px;
     column-gap: 105px;
