@@ -17,6 +17,7 @@ margin: 0 auto;
   width: 708px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 @media (min-width:@desktop-width){
   width: 1220px;
@@ -24,20 +25,27 @@ margin: 0 auto;
 }
 .page-footer__logo{
 margin-left: 75px;
-margin-bottom: 57px;
+margin-bottom: 32px;
 @media (min-width:@tablet-width){
   margin: 0;
 }
 }
 .social{
-  margin-bottom: 53px;
+  padding: 24px 77px 23px 72px;
+  margin-bottom: 22px;
+  border-top: 1px solid @line-gray;
+  border-bottom: 1px solid @line-gray;
   @media (min-width:@tablet-width){
     margin: 0;
+    padding: 0;
+    width: 129px;
+    border: none;
   }
 }
 .social__list{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   padding: 0;
   list-style-type: none;
   margin-top: 0;
@@ -48,5 +56,11 @@ font-size: 16px;
 line-height: 18px;
 text-decoration: none;
 color: @dark-gray;
+display: flex;
+align-items: center;
+justify-content: space-between;
+@media (min-width:@tablet-width){
+  width: 163px;
+}
 }
 
