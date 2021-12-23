@@ -120,7 +120,7 @@
                         <button class="button button--order" type="button">Заказать</button>
                     </li>
                     <li class="catalog__item">
-                        <a class="catalog__ink">
+                        <a class="catalog__link">
                             <img class="catalog__image" src="img/catalog/product_4.png" width="68" height="86" alt="Pro 500" />
                         </a>
                         <div class="catalog__description">
@@ -232,7 +232,7 @@
                             <span class="recommended__number">1 упаковка(100 г)</span>
                             <span class="recommended__price">200 Р.</span>
                         </div>
-                        <button class="button button--order button--recommended" type="button">Заказать</button>
+                        <button class="button  button--recommended" type="button">Заказать</button>
                     </li>
                     <li class="recommended__link">
                         <h3 class="recommended__name">Питьевая вода</h3>
@@ -240,7 +240,7 @@
                             <span class="recommended__number">5 литров</span>
                             <span class="recommendedr__price">50 Р.</span>
                         </div>
-                        <button class="button button--order button--recommended" type="button">Заказать</button>
+                        <button class="button  button--recommended" type="button">Заказать</button>
                     </li>
                     <li class="recommended__link">
                         <h3 class="recommended__name">Молоко</h3>
@@ -248,7 +248,7 @@
                             <span class="recommended__number">1 литр</span>
                             <span class="recommended__price">100 Р.</span>
                         </div>
-                        <button class="button button--order button--recommended" type="button">Заказать</button>
+                        <button class="button  button--recommended" type="button">Заказать</button>
                     </li>
                     <li class="recommended__link">
                         <h3 class="recommended__name">Витамины</h3>
@@ -256,7 +256,7 @@
                             <span class="recommended__number">1 упаковка(30 г)</span>
                             <span class="recommended__price">300 Р.</span>
                         </div>
-                        <button class="button button--order button--recommended" type="button">Заказать</button>
+                        <button class="button  button--recommended" type="button">Заказать</button>
                     </li>
                 </ul>
               </div>
@@ -325,5 +325,21 @@
               </div>
           </div>
       </footer>
+      <script>
+        var navMain = document.querySelector('.main-nav');
+        var navToggle = document.querySelector('.main-nav__toggle');
+
+        navMain.classList.remove('main-nav--nojs');
+
+        navToggle.addEventListener('click', function() {
+          if (navMain.classList.contains('main-nav--closed')) {
+            navMain.classList.remove('main-nav--closed');
+            navMain.classList.add('main-nav--opened');
+          } else {
+            navMain.classList.add('main-nav--closed');
+            navMain.classList.remove('main-nav--opened');
+          }
+        });
+      </script>
     </body>
 </html>
