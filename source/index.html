@@ -11,9 +11,12 @@
           <section class="page-header__layout">
       <div class="page-header__container">
             <a class="page-header__logo" href="index.html">
-                <img src="img/logo-mobile.png" width="33" height="37" alt="Кэт лого" />
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" width="202" height="59">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174" height="51">
+                <img src="img/logo-mobile.svg" width="33" height="37" alt="Кэт лого" />
+              </picture>
             </a>
-            <h1 class="page-header__title">Cat Energy</h1>
           </div>
             <nav class="main-nav main-nav--closed main-nav--nojs">
               <button class="main-nav__toggle" type="button">
@@ -51,7 +54,11 @@
               </p>
             </div>
             <div class="intro__picture">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/main_photo-desktop.png" width="552" height="499">
+              <source media="(min-width: 768px)" srcset="img/main_photo-tablet.png" width="709" height="609">
               <img class="intro__image" src="img/main_photo.png" width="280" height="270" alt="Фото еды" />
+            </picture>
             </div>
               <button class="button button--intro">
                   Подобрать программу
@@ -63,7 +70,11 @@
             <section class="purpose">
                 <div class="purpose__wrapper">
                   <div class="purpose__container">
-                    <img class="purpose__mage" src="img/lynx.svg" width="36" height="50" alt="рысь" />
+                    <!-- <picture>
+                    <source media="(min-width: 1440px)" srcset="img/lynx-desktop.svg" width="70" height="97">
+                    <source media="(min-width: 768px)" srcset="img/lynx-tablet.svg" width="140" height="194">
+                    <img class="purpose__image purpose__image--lynx" src="img/lynx.svg" width="36" height="50" alt="рысь" />
+                  </picture> -->
                     <h2 class="purpose__caption purpose__caption--slimming">Похудение</h2>
                   </div>
                     <p class="purpose__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
@@ -73,7 +84,11 @@
                 </div>
                 <div class="purpose__wrapper">
                   <div class="purpose__container">
-                    <img class="purpose__mage" src="img/panther.svg" width="67" height="28" alt="пантера" />
+                    <!-- <picture>
+                      <source media="(min-width: 1440px)" srcset="img/panther-desktop.svg" width="134" height="56">
+                      <source media="(min-width: 768px)" srcset="img/panther-tablet.svg" width="268" height="112">
+                    <img class="purpose__image purpose__image--panther" src="img/panther.svg" width="67" height="28" alt="пантера" />
+                    </picture> -->
                     <h2 class="purpose__caption purpose__caption--gain">Набор массы</h2>
                   </div>
                     <p class="purpose__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>

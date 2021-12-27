@@ -1,4 +1,11 @@
 .purpose{
+
+padding-left: 20px;
+padding-right: 20px;
+@media (min-width: @tablet-width){
+  padding-left: 30px;
+padding-right: 30px;
+}
   @media (min-width: @desktop-width){
     display: grid;
     grid-template-columns: 1fr 1fr ;
@@ -8,13 +15,16 @@
   }
 }
 .purpose__wrapper{
-  width: 280px;
   background-color: @gray;
   margin: 0 auto;
   margin-bottom: 20px;
   padding-bottom: 22px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
   @media (min-width: @tablet-width){
-    width: 708px;
     padding-top: 77px;
     padding-bottom: 57px;
   }
@@ -26,7 +36,6 @@
 }
 .purpose__container{
   display: flex;
-  margin-left: 20px;
   align-items: center;
   @media (min-width: @tablet-width){
     margin-left: 53px;
@@ -39,6 +48,8 @@ font-weight: normal;
 font-size: 24px;
 line-height: 37px;
 text-transform: uppercase;
+position: relative;
+margin-left: 71px;
 @media (min-width: @tablet-width){
 font-size: 36px;
 line-height: 36px;
@@ -47,12 +58,85 @@ margin: 0;
 }
 @media (min-width: @desktop-width){
   order: 1;
+  margin-left: 162px;
 }
+}
+.purpose__caption::after{
+  position: absolute;
+  width: 50px;
+height: 50px;
+content: "";
+background-color: @green;
+top: -7px;
+left: -70px;
+z-index: 1;
+border-radius: 50%;
+@media (min-width: @tablet-width){
+  width: 200px;
+height: 200px;
+left: 393px;
+top: 15px;
+content: "";
+}
+@media (min-width: @desktop-width){
+  width: 100px;
+height: 100px;
+left: -162px;
+top: -28px;
+}
+}
+.purpose__caption--slimming::before{
+  position: absolute;
+top: -10px;
+left: -61px;
+z-index: 2;
+content: url("../img/lynx.svg");
+@media (min-width: @tablet-width){
+left: 420px;
+top: 5px;
+content: url("../img/lynx-tablet.svg");
+}
+@media (min-width: @desktop-width){
+left: -145px;
+top: -30px;
+content: url("../img/lynx-desktop.svg");
+}
+}
+.purpose__caption--gain::before{
+  position: absolute;
+top: 5px;
+left: -82px;
+z-index: 2;
+content: url("../img/panther.svg");
+@media (min-width: @tablet-width){
+left: 363px;
+top: 55px;
+content: url("../img/panther-tablet.svg");
+}
+@media (min-width: @desktop-width){
+left: -190px;
+top: -5px;
+content: url("../img/panther-desktop.svg");
+}
+}
+.purpose__image{
+  z-index: 5;
+left: 0;
+}
+.purpose__image--lynx{
+  left:50px;
+  @media (min-width: @tablet-width){
+    left:640px;
+  }
+}
+.purpose__image--panther{
+  left:30px;
+   @media (min-width: @tablet-width){
+    left:570px;
+  }
 }
 .purpose__text{
-width: 240px;
 line-height: 18px;
-margin-left: 20px;
 margin-bottom: 19px;
 padding-bottom: 23px;
 border-bottom: 1px solid @line-gray;
@@ -68,6 +152,7 @@ margin-bottom: 52px;}
 @media (min-width: @desktop-width){
   width: 467px;
   margin-bottom: 27px;
+  margin-top: 73px;
 }
 }
 .purpose__button{
@@ -102,3 +187,4 @@ line-height: 30px;
 margin-left: 53px;
   }
 }
+

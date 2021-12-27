@@ -12,12 +12,13 @@
   background-image:none;
   position: relative;
   margin-top: 0;
+  padding-left: 30px;
+  padding-right: 30px;
  }
 }
 
 .intro__container{
   @media (min-width: @tablet-width){
-    width: 708px;
     margin: 0 auto;
     position: relative;
   }
@@ -40,7 +41,6 @@ margin-bottom: 82px;
   margin: 0 auto;
   padding-bottom: 164px;
   @media (min-width: @tablet-width){
-    width: 708px;
     align-items: start;
   }
   @media (min-width: @desktop-width){
@@ -52,10 +52,13 @@ margin: 0;
   width: 280px;
   margin: 0 auto;
   margin-top: -140px;
+  @media (min-width: @tablet-width){
+    width: 100%;
+  }
   @media (min-width: @desktop-width){
     margin: 0;
     padding: 0;
-    width: 610px;
+margin-left: -40px;
   }
 
   }
@@ -120,6 +123,6 @@ margin: 0;
   }
   @media (min-width: @desktop-width){
     left: 80px;
-    top:300px
+    top: 350px;
   }
 }

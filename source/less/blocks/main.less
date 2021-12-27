@@ -1,13 +1,15 @@
+
 .main-nav__wrapper{
   position: absolute;
-  width: 100%;
   margin: 0 auto;
   text-transform: uppercase;
   background-color: @white;
+  width: 100%;
+  z-index: 5;
   @media (min-width: @tablet-width){
     background-color: transparent;
     position: relative;
-   width: 100%;
+   min-width: 440px;
   }
   @media (min-width: @desktop-width){
     width: 478px;
@@ -83,7 +85,7 @@ border-bottom: 2px solid @green;
     background-color: transparent;
     border: none;
     left:88%;
-    top: 25px;
+    top: 15px;
     @media (min-width: @tablet-width){
     display: none;}
     @media (min-width: @desktop-width){
