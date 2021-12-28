@@ -6,6 +6,10 @@
  background-image: url(../img/cat-background.jpg), linear-gradient( rgb(100 168 63) 67% ,white 50% );
  background-repeat: no-repeat;
  background-position: top center;
+ @media (min-resolution:2dppx){
+  background-image:url(../img/cat-background@2x.jpg), linear-gradient( rgb(100 168 63) 100% ,white 50% );
+  background-size: auto 302px;
+ }
  @media (min-width: @tablet-width){
   color: @black;
   background-color:transparent;
