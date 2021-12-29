@@ -163,14 +163,17 @@ width: 225px;
   padding-top: 187px;
   padding-bottom: 43px;
   @media (min-width:@tablet-width){
-    width: 100%;
+    background-position: center;
+    background:linear-gradient(rgba(104,183,56,0.85) 100%, white 50%), url("../img/catalog/cat_inbox.jpg");
     flex-direction: row;
 margin-bottom: 76px;
-background-size: cover;
-background-position: top;
 padding-top: 71px;
   padding-bottom: 69px;
   justify-content: flex-end;
+  background: url("../img/catalog/cat_inbox.jpg");
+  @media (min-resolution: 2dppx) {
+    background:url("../img/catalog/cat_inbox@2x.jpg");
+  }
   }
   @media (min-width:@desktop-width){
     width: 245px;
