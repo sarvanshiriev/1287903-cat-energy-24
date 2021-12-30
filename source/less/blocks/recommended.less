@@ -151,37 +151,45 @@ width: 225px;
   }
 }
 .recommended__promotion{
-  background:linear-gradient(rgba(104,183,56,0.85) 100%, white 50%), url("../img/catalog/cat_inbox.png");
+  background:linear-gradient(rgba(104,183,56,0.85) 100%, white 50%), url("../img/catalog/cat_inbox.jpg");
   background-position: center;
   margin: 0 auto;
   background-repeat: no-repeat;
-  text-align: center;
-  display: flex;
-  justify-content: center;
   margin-top: 35px;
   margin-bottom: 35px;
-  padding-top: 187px;
+  padding-top: 59px;
   padding-bottom: 43px;
-  @media (min-width:@tablet-width){
-    background-position: center;
-    background:linear-gradient(rgba(104,183,56,0.85) 100%, white 50%), url("../img/catalog/cat_inbox.jpg");
-    flex-direction: row;
-margin-bottom: 76px;
-padding-top: 71px;
-  padding-bottom: 69px;
-  justify-content: flex-end;
-  background: url("../img/catalog/cat_inbox.jpg");
+  display: flex;
+  flex-direction: column;
+ align-items: center;
   @media (min-resolution: 2dppx) {
     background:url("../img/catalog/cat_inbox@2x.jpg");
+  }
+  @media (min-width:@tablet-width){
+    background-position: center;
+    background:linear-gradient(rgba(104,183,56,0.85) 100%, white 50%), url("../img/catalog/cat_inbox-tablet.jpg");
+    background-size: cover;
+    flex-direction: row;
+margin-bottom: 76px;
+padding: 71px 124px 69px 77px;
+justify-content: space-between;
+align-items: center;
+@media (min-resolution: 2dppx) {
+    background:url("../img/catalog/cat_inbox-tablet@2x.jpg");
   }
   }
   @media (min-width:@desktop-width){
     width: 245px;
-    padding-bottom: 42px;
-    padding-top: 185px;
     margin: 0;
     margin-top: 200px;
+    padding: 55px 42px 42px 41px;
     justify-content: center;
+    flex-direction: column;
+    background:url("../img/catalog/cat_inbox-desktop.jpg");
+    background-size: 245px 289px;
+    @media (min-resolution: 2dppx) {
+      background:url("../img/catalog/cat_inbox-desktop@2x.jpg");
+    }
   }
 }
 .recommended__promotion__link{
@@ -192,7 +200,6 @@ width: 161px;
 text-align: center;
 color: @white;
 @media (min-width:@tablet-width){
-  margin-right: 124px;
 text-align: start;
 }
 @media (min-width:@desktop-width){
@@ -200,22 +207,13 @@ text-align: start;
   margin: 0;
 }
 }
-.recommended__promotion__link::after{
-  width: 78px;
-height: 80px;
-position: absolute;
-content: url(../img/catalog/gift.svg);
-top: -128px;
-left: 25%;
-@media (min-width:@tablet-width){
-  width: 80px;
-height: 83px;
-top: -10px;
-left: -345px;
-}
-@media (min-width:@desktop-width){
-  left:40px;
-  top: -128px;
-}
+.recommended__promotion__image{
+  margin-bottom: 48px;
+  @media (min-width:@tablet-width){
+    margin: 0;
+  }
+  @media (min-width:@desktop-width){
+    margin-bottom: 46px;
+  }
 }
 
