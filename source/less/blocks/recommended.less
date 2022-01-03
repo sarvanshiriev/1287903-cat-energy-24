@@ -151,7 +151,7 @@ width: 225px;
   }
 }
 .recommended__promotion{
-  background-image:linear-gradient(rgba(104,183,56,0.85) 100%, white 50%), url("../img/catalog/cat_inbox.jpg");
+  background-image:url("../img/catalog/cat_inbox.jpg"),linear-gradient( rgb(100 168 63) 67% ,white 50% );
   background-position: center;
   margin: 0 auto;
   background-repeat: no-repeat;
@@ -164,12 +164,12 @@ width: 225px;
  align-items: center;
  background-size: 280px 289px;
   @media (min-resolution: 2dppx) {
-    background-image:url("../img/catalog/cat_inbox@2x.jpg");
+    background-image:url("../img/catalog/cat_inbox@2x.jpg"),linear-gradient( rgb(100 168 63) 67% ,white 50% );
   }
   @media (min-width:@tablet-width){
     background-position: center;
-    background-image:linear-gradient(rgba(104,183,56,0.85) 100%, white 50%), url("../img/catalog/cat_inbox-tablet.jpg");
-    background-size: 707px 200px;
+    background-image:url("../img/catalog/cat_inbox-tablet.jpg"),linear-gradient( rgb(100 168 63) 67% ,white 50% );
+    background-size: 100% 200px;
     flex-direction: row;
 margin-bottom: 76px;
 padding: 71px 124px 69px 77px;
@@ -210,12 +210,12 @@ text-align: start;
 }
 .recommended__promotion__image{
   margin-bottom: 48px;
-  width="78";
-   height="80";
+  width:78px;
+   height:80px;
   @media (min-width:@tablet-width){
     margin: 0;
-    width="78";
-   height="80";
+    width:78px;
+   height:80px;
   }
   @media (min-width:@desktop-width){
     margin-bottom: 46px;
