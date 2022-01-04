@@ -44,8 +44,7 @@ padding-top: 69px;
     padding: 0;
     border: none;
   }
-  @media (min-width: @desktop-width){
-  }
+
 }
 .page-header__title{
   margin-top: 24px;
@@ -56,3 +55,27 @@ padding-top: 69px;
     display: none;
   }
 }
+.page-header__icon-mobile{
+  @media (min-width: @tablet-width){
+    display: none;
+  }
+}
+.page-header__icon-tablet{
+  display: none;
+  @media (min-width: @tablet-width){
+    display: block;
+  }
+  @media (min-width: @desktop-width){
+    display: none;
+  }
+}
+.page-header__icon-desktop{
+  display: none;
+  @media (min-width: @tablet-width){
+    display: none;
+  }
+  @media (min-width: @desktop-width){
+    display: block;
+  }
+}
+
