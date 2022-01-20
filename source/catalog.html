@@ -16,13 +16,19 @@
         <section class="page-header__layout">
           <div class="page-header__container">
                 <a class="page-header__logo" href="index.html">
-                  <picture>
-                    <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" width="202" height="59">
-                    <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174" height="51">
-                    <img src="img/logo-mobile.svg" width="33" height="37" alt="Кэт лого" />
-                  </picture>
+                  <svg class="page-header__icon-desktop" width="202" height="59">
+                    <use xlink:href="../img/sprite.svg#logo-desktop" ></use>
+                    </svg>
+                  <svg class="page-header__icon-tablet" width="174" height="51" >
+                    <use xlink:href="../img/sprite.svg#logo-tablet"></use>
+                    </svg>
+                  <svg class="page-header__icon-mobile" width="33" height="37" >
+                    <use xlink:href="../img/sprite.svg#logo-mobile"></use>
+                    </svg>
                 </a>
-                <img class="page-header__logo-text" src="img/logo-text.svg" width="101" height="18" alt="Кэт лого" />
+                <svg class="page-header__logo-text"  width="101" height="18" alt="Кэт лого" >
+                  <use xlink:href="../img/sprite.svg#logo-text"></use>
+                </svg>
                 <nav class="main-nav main-nav--closed main-nav--nojs">
                   <button class="main-nav__toggle" type="button">
                     <span class="visually-hidden" hidden>Открыть меню</span>
@@ -291,7 +297,7 @@
                 </ul>
               </div>
               <div class="recommended__promotion">
-                <img class="recommended__promotion__image" src="../img/catalog/gift.svg" alt="Подарочная коробка" s>
+                <img class="recommended__promotion__image" src="../img/catalog/gift.svg" alt="Подарочная коробка" >
               <a class="recommended__promotion__link">Закажите все<br> и получите чехол для кота в подарок!</a>
             </div>
             </section>
@@ -314,7 +320,9 @@
           <div class="page-footer__wrapper">
             <div class="page-footer__logo">
               <a class="page-footer__logo__text" href="index.html">
-                  <img src="img/logo.svg" width="128" height="24" alt="Кэт энерджи" />
+                <svg class="footer-social-logo" width="128" height="24" alt="Кэт энерджи" >
+                  <use xlink:href="../img/sprite.svg#logo"></use>
+              </svg>
               </a>
             </div>
               <div class="social">
