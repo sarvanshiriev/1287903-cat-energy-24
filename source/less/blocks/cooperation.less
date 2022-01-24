@@ -1,5 +1,6 @@
 .cooperation{
   background-color: @gray;
+  position: relative;
 }
 .cooperation--index{
   background-color: @white;
@@ -20,12 +21,21 @@
     width: 405px;
     padding: 60px 60px 56px 80px;
     background-color: @white;
+    z-index: 5;
+    margin-bottom: 0;
+    position: absolute;
+    margin-left: 110px;
+    margin-top: 95px;
   }
 }
 .cooperation__map{
   margin: 0 auto;
-  width: 320px;
-}
+  width: 100%;
+  @media (min-width:@desktop-width){
+    z-index: 0;
+  }
+  }
+
 .cooperation__caption{
   font-family: Oswald;
 font-style: normal;

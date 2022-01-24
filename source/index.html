@@ -12,7 +12,7 @@
         <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
     </head>
     <body class="page__body">
-             <header class="page-header page-header--home">
+            <header class="page-header page-header--home">
           <section class="page-header__layout">
       <div class="page-header__container">
             <a class="page-header__logo" href="index.html">
@@ -114,7 +114,7 @@
                         <li class="features__item">
                           <svg class="features__image"  width="30" height="31" >
                             <use xlink:href="../img/sprite.svg#tub"></use>
-                           </svg>
+                            </svg>
                             <p class="features__text">
                                 Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
                             </p>
@@ -177,28 +177,39 @@
                   </div>
                     <div class="example__container">
                         <div class="example__slider">
+                          <input class="example__range__inpute example__range__input--slide1  visually-hidden" checked type="radio" name="button" id="slide1" alt="Было" >
+                          <input class="example__range__input example__range__input--slide2 visually-hidden" type="radio" name="button" id="slide2" alt="Стало" >
+                          <div class="example__slide1">
                           <picture>
-                            <source type="image/webp" media="(min-width:1440px)"  srcset="img/cat-fat-desktop.webp 1x, img/cat-fat-desktop@2x.webp 2x ">
-                            <source type="image/webp" media="(min-width:768px)"  srcset="img/cat-fat-tablet.webp 1x, img/cat-fat-tablet@2x.webp 2x ">
-                            <source type="image/webp" srcset="img/cat-fat.webp 1x, img/cat-fat@2x.webp 2x ">
+                            <source type="image/webp" media="(min-width:1440px)"  srcset="img/cat-fat-desktop.webp 1x, img/cat-fat-desktop@2x.webp 2x " width="592" height="511">
+                            <source type="image/webp" media="(min-width:768px)"  srcset="img/cat-fat-tablet.webp 1x, img/cat-fat-tablet@2x.webp 2x " width="592" height="511">
+                            <source type="image/webp" srcset="img/cat-fat.webp 1x, img/cat-fat@2x.webp 2x " width="280" height="232">
                             <source media="(min-width:1440px)" srcset="img/cat-fat-desktop.png 1x , img/cat-fat-desktop@2x.png 2x" width="592" height="511">
                             <source media="(min-width:768px)" srcset="img/cat-fat-tablet.png 1x , img/cat-fat-tablet@2x.png 1x" width="592" height="511">
                             <img class="example__image" src="img/cat-fat.png" srcset="img/cat-fat@2x.png 2x"  width="280" height="232" alt="Толстый кот" />
                           </picture>
+                        </div>
+                        <div class="example__slide2">
                           <picture>
-                            <source type="image/webp" media="(min-width:1440px)"  srcset="img/cat-skinny-desktop.webp 1x, img/cat-skinny-desktop@2x.webp 2x ">
-                            <source type="image/webp" media="(min-width:768px)"  srcset="img/cat-skinny-tablet.webp 1x, img/cat-skinny-tablet@2x.webp 2x ">
-                            <source type="image/webp" srcset="img/cat-skinny.webp 1x, img/cat-skinny@2x.webp 2x ">
+                            <source type="image/webp" media="(min-width:1440px)"  srcset="img/cat-skinny-desktop.webp 1x, img/cat-skinny-desktop@2x.webp 2x " width="592" height="511">
+                            <source type="image/webp" media="(min-width:768px)"  srcset="img/cat-skinny-tablet.webp 1x, img/cat-skinny-tablet@2x.webp 2x " width="592" height="511">
+                            <source type="image/webp" srcset="img/cat-skinny.webp 1x, img/cat-skinny@2x.webp 2x " width="280" height="232">
                             <source media="(min-width:1440px)" srcset="img/cat-skinny-desktop.png 1x , img/cat-skinny-desktop@2x.png 2x" width="592" height="511">
                             <source media="(min-width:768px)" srcset="img/cat-skinny-tablet.png 1x , img/cat-skinny-tablet@2x.png 2x" width="592" height="511">
                             <img class="example__image" src="img/cat-skinny.png" srcset="img/cat-skinny@2x.png 2x" width="280" height="232" alt="Худой кот" />
                           </picture>
-                          </div>
-                        <div class="example__range">
-                            <button class="example__button" type="button">Было</button>
-                            <input class="example__slider" type="range" min="0" max="100" aria-label="Сравнить" />
-                            <button class="example__button" type="button">Стало</button>
                         </div>
+                        <div class="example__range">
+                          <ul class="example__range__list">
+                        <li class="example__range__item example__range__item--slide1">
+                          <label for="slide1">Было</label>
+                        </li>
+                        <li class="example__range__item example__range__item--slide2">
+                          <label for="slide2">Стало</label>
+                        </li>
+                        </ul>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -213,7 +224,7 @@
                 </address>
               </div>
               <div class="cooperation__map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.3282660251016!2d30.3199423!3d59.9377152!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb9217f09%3A0xa078b6b7d5053059!2z0JTQm9Ci!5e0!3m2!1sru!2sru!4v1639650301598!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.3282660251016!2d30.3199423!3d59.9377152!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb9217f09%3A0xa078b6b7d5053059!2z0JTQm9Ci!5e0!3m2!1sru!2sru!4v1639650301598!5m2!1sru!2sru" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                   </div>
             </section>
         </main>
