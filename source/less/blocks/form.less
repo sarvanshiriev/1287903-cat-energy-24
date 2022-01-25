@@ -93,6 +93,13 @@ left:-45px;
   left: -60px;
 }
 }
+.form__result .form__filter--result:hover::before{
+  border: 1px solid #BABABA;
+}
+.form__result .form__filter--result:active::before{
+  border: 1px solid #BABABA;
+  opacity: 0.3;
+}
 .form__input[type="radio"]:checked +.form__filter--result::after{
   position: absolute;
   content: "";
@@ -108,6 +115,9 @@ left: -36px;
   left: -49px;
   top: 8px;
 }
+}
+.form__input[type="radio"]:checked +.form__filter--result:active:after{
+  opacity: 0.3;
 }
 .form__filter--result{
   @media (min-width:@tablet-width){
@@ -128,6 +138,7 @@ line-height: 18px;
 text-transform: uppercase;
 flex-grow: 1;
 z-index: 1;
+outline: none;
 @media (min-width:@tablet-width){
   font-size: 20px;
 line-height: 30px;
@@ -136,11 +147,39 @@ padding-top: 10px;
 padding-bottom: 11px;
 }
 }
+.form__input:hover{
+  border: 1px solid @table-gray;
+}
+.form__input:focus{
+  border: 1px solid @black;
+}
+.form__input:invalid{
+  border: 2px solid #FF8282;
+}
+
 .form__item--owner:nth-child(1):before{
   position: absolute;
   width: min-content;
   height: min-content;
   content: url("../img/form/email.svg");
+  top: 16px;
+  right: 16px;
+  z-index: 5;
+}
+.form__input--owner:focus .form__item--owner:nth-child(1):before{
+  position: absolute;
+  width: min-content;
+  height: min-content;
+  content: url("../img/form/email2.svg");
+  top: 16px;
+  right: 16px;
+  z-index: 5;
+}
+.form__input--owner:invalid .form__item--owner:nth-child(1):before{
+  position: absolute;
+  width: min-content;
+  height: min-content;
+  content: url("../img/form/email3.svg");
   top: 16px;
   right: 16px;
   z-index: 5;
@@ -343,6 +382,12 @@ content: "";
 height: 40px;
 left: -59px;
 }
+}
+.form__filter--product:hover:before{
+  border: 1px solid #BABABA;
+}
+.form__filter--product:active:before{
+  opacity: 0.3;
 }
 .form__input[type="checkbox"]:checked+.form__filter--product::before{
   content: url("../img/form/Vector.svg");

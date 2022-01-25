@@ -206,7 +206,16 @@ cursor: pointer;
 @media (min-width:@tablet-width){
   font-size: 20px;
 line-height: 30px;
+border-bottom: 1px dashed rgba(0, 0, 0, 0.4) ;
 }
+}
+.example__range__item:hover{
+  @media (min-width:@tablet-width){
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4) ;
+  }
+}
+.example__range__item:active{
+  border-bottom:none;
 }
 .example__range__list{
   width: 210px;
@@ -294,6 +303,13 @@ top: -2px;
   top: -2px;
   }
   }
+  .example__range__input--slide2[type="radio"]:checked ~ .example__range:active  .example__range__item--slide2::after,
+  .example__range__input--slide1[type="radio"]:checked ~ .example__range:active  .example__range__item--slide1::after{
+    @media (min-width:@tablet-width){
+      border:1px solid @green;
+    }
+  }
+
   .example__range__input--slide2[type="radio"]:checked ~ .example__range  .example__range__item--slide2::before{
     @media (min-width:@tablet-width){
       position: absolute;
