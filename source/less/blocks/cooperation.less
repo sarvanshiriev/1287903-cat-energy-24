@@ -1,23 +1,27 @@
-.cooperation{
+.cooperation {
   background-color: @gray;
   position: relative;
 }
-.cooperation--index{
+
+.cooperation--index {
   background-color: @white;
 }
-.cooperation__container{
+
+.cooperation__container {
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  @media (min-width:@tablet-width){
+
+  @media (min-width: @tablet-width) {
     padding-left: 70px;
     padding-right: 70px;
     margin-bottom: 56px;
     padding-top: 60px;
   }
-  @media (min-width:@desktop-width){
+
+  @media (min-width: @desktop-width) {
     width: 405px;
     padding: 60px 60px 56px 80px;
     background-color: @white;
@@ -28,52 +32,59 @@
     margin-top: 95px;
   }
 }
-.cooperation__map{
+
+.cooperation__map {
   margin: 0 auto;
   width: 100%;
-  @media (min-width:@desktop-width){
+
+  @media (min-width: @desktop-width) {
     z-index: 0;
   }
+}
+
+.cooperation__caption {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  width: 139px;
+  margin-top: 26px;
+  margin-bottom: 26px;
+  color: @black-title;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    width: 172px;
+    margin: 0;
+  }
+}
+
+.cooperation__adress {
+  line-height: 20px;
+  width: 155px;
+  margin-top: 26px;
+  margin-bottom: 26px;
+  font-style: normal;
+  color: @dark-gray;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
-.cooperation__caption{
-  font-family: Oswald;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 20px;
-text-transform: uppercase;
-width: 139px;
-margin-top: 26px;
-margin-bottom: 26px;
-color: @black-title;
-@media (min-width:@tablet-width){
-  font-size: 20px;
-  line-height: 26px;
-  width: 172px;
-  margin: 0;
+  @media (min-width: @desktop-width) {
+    text-align: left;
+  }
 }
-}
-.cooperation__adress{
-line-height: 20px;
-width: 155px;
-margin-top: 26px;
-margin-bottom: 26px;
-font-style: normal;
-color: @dark-gray;
-@media (min-width:@tablet-width){
-font-size: 16px;
-line-height: 20px;
-text-align: right;
-margin: 0;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-}
-@media (min-width:@desktop-width){
-  text-align: left;
-}
-}
-.cooperation__adress-text{
+
+.cooperation__adress-text {
   margin: 0;
 }
