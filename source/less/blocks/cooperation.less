@@ -1,10 +1,22 @@
 .cooperation {
   background-color: @gray;
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 59px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 0;
+  }
 }
 
 .cooperation--index {
   background-color: @white;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .cooperation__container {
@@ -17,12 +29,12 @@
   @media (min-width: @tablet-width) {
     padding-left: 70px;
     padding-right: 70px;
-    margin-bottom: 48px;
+    margin-bottom: 62px;
   }
 
   @media (min-width: @desktop-width) {
     width: 405px;
-    padding: 60px 60px 56px 80px;
+    padding: 60px 80px 58px 80px;
     background-color: @white;
     z-index: 5;
     margin-bottom: 0;
@@ -91,5 +103,9 @@
 }
 
 .cooperation__adress-text {
+  margin: 0;
+}
+
+.cooperation__adress-city {
   margin: 0;
 }
