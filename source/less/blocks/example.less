@@ -35,24 +35,28 @@
 }
 
 .example__info {
-  @media (min-width: @tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-  }
-
   @media (min-width: @desktop-width) {
     width: 610px;
+    display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: flex-start;
   }
 }
 
+.example__numbers {
+  display: flex;
+  justify-content: space-between;
+}
+
 .example__caption {
   margin-top: 0;
   margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 90px;
+    margin-bottom: 65px;
+  }
 
   @media (min-width: @desktop-width) {
     margin-top: -140px;
@@ -68,7 +72,8 @@
     font-size: 16px;
     line-height: 24px;
     min-width: 700px;
-    margin-bottom: 69px;
+    margin-bottom: 51px;
+    padding-right: 20px;
   }
 
   @media (min-width: @desktop-width) {
@@ -139,7 +144,7 @@
     margin: 0 auto;
     margin-top: 242px;
     background-color: @light-gray;
-    padding-bottom: 61px;
+    padding-bottom: 46px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -199,6 +204,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    margin-bottom: 0;
+    margin-top: -10px;
   }
 
   @media (min-width: @desktop-width) {
@@ -222,8 +229,8 @@
 }
 
 .example__range {
-  margin-top: 17px;
-  margin-left: 40px;
+  margin-top: 27px;
+  margin-left: 28px;
 }
 
 .example__range__item {
@@ -264,7 +271,7 @@
   position: relative;
 
   @media (min-width: @tablet-width) {
-    width: 572px;
+    width: 570px;
   }
 }
 
@@ -376,7 +383,9 @@
   display: none;
 
   @media (min-width: @tablet-width) {
-    margin-top: -172px;
+    margin-top: -170px;
+    margin-left: 29px;
+    transform: rotate(3deg);
   }
 
   @media (min-width: @desktop-width) {
