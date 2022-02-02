@@ -52,12 +52,13 @@
     margin-bottom: 80px;
     font-size: 36px;
     line-height: 36px;
-    margin-top: 68px;
+    margin-top: 66px;
   }
 
   @media (min-width: @desktop-width) {
     margin-left: 0;
-    margin-bottom: 106px;
+    margin-bottom: 78px;
+    margin-top: 74px;
   }
 }
 
@@ -96,7 +97,7 @@
 .recommended__link {
   border-top: 1px solid @table-gray;
   border-bottom: 1px solid @table-gray;
-  padding-bottom: 19px;
+  padding-bottom: 17px;
   margin-bottom: -1px;
 
   @media (min-width: @tablet-width) {
@@ -105,7 +106,7 @@
     justify-content: space-between;
     align-items: flex-end;
     border: 1px solid @table-gray;
-    padding: 26px 38px 28px 38px;
+    padding: 25px 38px 28px 38px;
     margin-bottom: -1px;
   }
 
@@ -143,18 +144,25 @@
 
 .recommended__description {
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   margin-bottom: 15px;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
-    line-height: 20px;
     margin: 0;
     width: 225px;
+    align-items: flex-end;
   }
 
   @media (min-width: @desktop-width) {
     width: 288px;
+    justify-content: space-between;
+  }
+}
+
+.recommended__price {
+  @media (min-width: @tablet-width) {
+    margin-left: 50px;
   }
 }
 
@@ -182,7 +190,7 @@
   background-repeat: no-repeat;
   margin-top: 35px;
   margin-bottom: 35px;
-  padding-top: 59px;
+  padding-top: 61px;
   padding-bottom: 43px;
   display: flex;
   flex-direction: column;
@@ -199,9 +207,10 @@
     background-size: cover;
     flex-direction: row;
     margin-bottom: 76px;
-    padding: 71px 124px 69px 77px;
+    padding: 58px 124px 63px 77px;
     justify-content: space-between;
     align-items: center;
+    margin-top: 67px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/catalog/cat_inbox-tablet@2x.jpg");
@@ -211,7 +220,7 @@
   @media (min-width: @desktop-width) {
     width: 245px;
     margin: 0;
-    margin-top: 200px;
+    margin-top: 190px;
     padding: 55px 42px 42px 41px;
     justify-content: center;
     flex-direction: column;

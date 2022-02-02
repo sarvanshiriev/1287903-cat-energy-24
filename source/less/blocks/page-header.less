@@ -15,14 +15,14 @@
   @media (min-width: @desktop-width) {
     background-image: url("../img/cat-background-2.jpg"), linear-gradient(to left, rgb(100 168 61) 50% 0, @white 50%);
     background-repeat: no-repeat;
-    background-position: right;
+    background-position-x: right;
     padding-top: 53px;
     padding-bottom: 54px;
     margin-top: 0;
+    background-size: auto 694px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/cat-background-2@2x.jpg"), linear-gradient(to left, rgb(100 168 61) 50% 0, @white 50%);
-      background-size: auto 637px;
     }
   }
 }
@@ -46,6 +46,14 @@
     width: 1220px;
     margin: 0 auto;
     margin-bottom: 31px;
+  }
+}
+
+.page-header__layout--catalog {
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+    margin-bottom: 76px;
   }
 }
 
