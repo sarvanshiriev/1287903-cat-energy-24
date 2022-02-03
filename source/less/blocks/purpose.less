@@ -51,7 +51,7 @@
 }
 
 .purpose__caption {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -190,7 +190,7 @@
 .purpose__button {
   background-color: transparent;
   border: none;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -198,6 +198,8 @@
   text-transform: uppercase;
   padding: 0;
   position: relative;
+  text-decoration: none;
+  color: @black;
 
   &::after {
     position: absolute;
@@ -230,11 +232,12 @@
     width: 32px;
     height: 12px;
     content: url("../img/form/arrow2.svg");
-    top: 0;
+    top: -1px;
     left: 102px;
 
     @media (min-width: @tablet-width) {
       left: 133px;
+      top: -2px;
     }
 
     @media (min-width: @desktop-width) {

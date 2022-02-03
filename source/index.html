@@ -10,6 +10,10 @@
         <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
         <link rel="icon" type="image/png" sizes="192x192"  href="favicons/android-icon-192x192.png">
         <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+        <link rel="preload" href="fonts/oswaldmedium.woff" type="font/woff2" as="font" crossorigin="anonymous">
+        <link rel="preload" href="fonts/oswaldmedium.woff" type="font/woff" as="font" crossorigin="anonymous">
+        <link rel="preload" href="fonts/oswaldregular.woff" type="font/woff2" as="font" crossorigin="anonymous">
+        <link rel="preload" href="fonts/oswaldregular.woff" type="font/woff" as="font" crossorigin="anonymous">
     </head>
     <body class="page__body">
             <header class="page-header page-header--home">
@@ -26,7 +30,7 @@
                   <use xlink:href="../img/sprite.svg#logo-mobile"></use>
                   </svg>
             </a>
-            <svg class="page-header__logo-text"  width="101" height="18" alt="Кэт лого" >
+            <svg class="page-header__logo-text"  width="101" height="18" >
               <use xlink:href="../img/sprite.svg#logo-text"></use>
             </svg>
             <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -67,14 +71,14 @@
             </div>
             <div class="intro__picture">
               <picture>
-                <source media="(min-width: 1440px)" srcset="img/main_photo-desktop.png, img/main_photo-desktop@2x.png 2x" width="552" height="499">
-              <source media="(min-width: 768px)" srcset="img/main_photo-tablet.png 1x, img/main_photo-tablet@2x.png 2x" width="709" height="609">
-              <img class="intro__image" src="img/main_photo.png" srcset="img/main_photo@2x.png 2x" width="280" height="270" alt="Фото еды" />
+                <source media="(min-width: 1440px)" srcset="img/main_photo-desktop.png, img/main_photo-desktop@2x.png 2x" >
+              <source media="(min-width: 768px)" srcset="img/main_photo-tablet.png 1x, img/main_photo-tablet@2x.png 2x" >
+              <img class="intro__image" src="img/main_photo.png" srcset="img/main_photo@2x.png 2x"  alt="Фото еды" />
             </picture>
             </div>
-              <button class="button button--intro">
+              <a class="button button--intro" href="form.html">
                   Подобрать программу
-              </button>
+              </a>
             </div>
           </section>
         </header>
@@ -85,18 +89,18 @@
                     <h2 class="purpose__caption purpose__caption--slimming">Похудение</h2>
                   </div>
                     <p class="purpose__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-                    <button class="purpose__button">
+                    <a class="purpose__button" href="catalog.html/catalog_slim.html">
                         Каталог Slim
-                    </button>
+                    </a>
                 </div>
                 <div class="purpose__wrapper">
                   <div class="purpose__container">
                     <h2 class="purpose__caption purpose__caption--gain">Набор массы</h2>
                   </div>
                     <p class="purpose__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-                    <button class="purpose__button">
+                    <a class="purpose__button" href="catalog.html/catalog_pro.html">
                         Каталог Pro
-                    </button>
+                    </a>
                 </div>
             </section>
             <section class="features">
@@ -181,26 +185,26 @@
                   </div>
                     <div class="example__container">
                         <div class="example__slider">
-                          <input class="example__range__inpute example__range__input--slide1  visually-hidden" checked type="radio" name="button" id="slide1" alt="Было" >
-                          <input class="example__range__input example__range__input--slide2 visually-hidden" type="radio" name="button" id="slide2" alt="Стало" >
+                          <input class="example__range__inpute example__range__input--slide1  visually-hidden" checked type="radio" name="button" id="slide1"  >
+                          <input class="example__range__input example__range__input--slide2 visually-hidden" type="radio" name="button" id="slide2"  >
                           <div class="example__slide1">
                           <picture>
-                            <source type="image/webp" media="(min-width:1440px)"  srcset="img/cat-fat-desktop.webp 1x, img/cat-fat-desktop@2x.webp 2x " width="592" height="511">
-                            <source type="image/webp" media="(min-width:768px)"  srcset="img/cat-fat-tablet.webp 1x, img/cat-fat-tablet@2x.webp 2x " width="592" height="511">
-                            <source type="image/webp" srcset="img/cat-fat.webp 1x, img/cat-fat@2x.webp 2x " width="280" height="232">
-                            <source media="(min-width:1440px)" srcset="img/cat-fat-desktop.png 1x , img/cat-fat-desktop@2x.png 2x" width="592" height="511">
-                            <source media="(min-width:768px)" srcset="img/cat-fat-tablet.png 1x , img/cat-fat-tablet@2x.png 1x" width="592" height="511">
-                            <img class="example__image" src="img/cat-fat.png" srcset="img/cat-fat@2x.png 2x"  width="280" height="232" alt="Толстый кот" />
+                            <source type="image/webp" media="(min-width:1440px)"  srcset="img/cat-fat-desktop.webp 1x, img/cat-fat-desktop@2x.webp 2x " >
+                            <source type="image/webp" media="(min-width:768px)"  srcset="img/cat-fat-tablet.webp 1x, img/cat-fat-tablet@2x.webp 2x " >
+                            <source type="image/webp" srcset="img/cat-fat.webp 1x, img/cat-fat@2x.webp 2x " >
+                            <source media="(min-width:1440px)" srcset="img/cat-fat-desktop.png 1x , img/cat-fat-desktop@2x.png 2x" >
+                            <source media="(min-width:768px)" srcset="img/cat-fat-tablet.png 1x , img/cat-fat-tablet@2x.png 2x" >
+                            <img class="example__image" src="img/cat-fat.png" srcset="img/cat-fat@2x.png 2x"   alt="Толстый кот" />
                           </picture>
                         </div>
                         <div class="example__slide2">
                           <picture>
-                            <source type="image/webp" media="(min-width:1440px)"  srcset="img/cat-skinny-desktop.webp 1x, img/cat-skinny-desktop@2x.webp 2x " width="592" height="511">
-                            <source type="image/webp" media="(min-width:768px)"  srcset="img/cat-skinny-tablet.webp 1x, img/cat-skinny-tablet@2x.webp 2x " width="592" height="511">
-                            <source type="image/webp" srcset="img/cat-skinny.webp 1x, img/cat-skinny@2x.webp 2x " width="280" height="232">
-                            <source media="(min-width:1440px)" srcset="img/cat-skinny-desktop.png 1x , img/cat-skinny-desktop@2x.png 2x" width="592" height="511">
-                            <source media="(min-width:768px)" srcset="img/cat-skinny-tablet.png 1x , img/cat-skinny-tablet@2x.png 2x" width="592" height="511">
-                            <img class="example__image" src="img/cat-skinny.png" srcset="img/cat-skinny@2x.png 2x" width="280" height="232" alt="Худой кот" />
+                            <source type="image/webp" media="(min-width:1440px)"  srcset="img/cat-skinny-desktop.webp 1x, img/cat-skinny-desktop@2x.webp 2x " >
+                            <source type="image/webp" media="(min-width:768px)"  srcset="img/cat-skinny-tablet.webp 1x, img/cat-skinny-tablet@2x.webp 2x " >
+                            <source type="image/webp" srcset="img/cat-skinny.webp 1x, img/cat-skinny@2x.webp 2x " >
+                            <source media="(min-width:1440px)" srcset="img/cat-skinny-desktop.png 1x , img/cat-skinny-desktop@2x.png 2x" >
+                            <source media="(min-width:768px)" srcset="img/cat-skinny-tablet.png 1x , img/cat-skinny-tablet@2x.png 2x" >
+                            <img class="example__image" src="img/cat-skinny.png" srcset="img/cat-skinny@2x.png 2x"  alt="Худой кот" />
                           </picture>
                         </div>
                         <div class="example__range">
@@ -229,7 +233,7 @@
                 </address>
               </div>
               <div class="cooperation__map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.3282660251016!2d30.3199423!3d59.9377152!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb9217f09%3A0xa078b6b7d5053059!2z0JTQm9Ci!5e0!3m2!1sru!2sru!4v1639650301598!5m2!1sru!2sru" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.3282660251016!2d30.3199423!3d59.9377152!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb9217f09%3A0xa078b6b7d5053059!2z0JTQm9Ci!5e0!3m2!1sru!2sru!4v1639650301598!5m2!1sru!2sru"   style="width: 100%;height: 100%;border: 0;" allowfullscreen="" loading="lazy"></iframe>
                   </div>
             </section>
         </main>
@@ -237,7 +241,7 @@
             <div class="page-footer__wrapper">
               <div class="page-footer__logo">
                 <a class="page-footer__logo__text" href="index.html">
-                    <svg class="footer-social-logo" width="128" height="24" alt="Кэт энерджи" >
+                    <svg class="footer-social-logo" width="128" height="24" >
                     <use xlink:href="../img/sprite.svg#logo"></use>
                 </svg>
                 </a>
@@ -247,42 +251,24 @@
                     <ul class="social__list">
                         <li class="social__item">
                             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-                              <svg class="footer-social-icon-desktop" width="29" height="17" >
-                                <use xlink:href="../img/sprite.svg#vk-tablet"></use>
-                                </svg>
-                              <svg class="footer-social-icon-tablet" width="29" height="17" >
-                                <use xlink:href="../img/sprite.svg#vk-tablet"></use>
-                                </svg>
-                              <svg class="footer-social-icon-mobile" width="23" height="13" >
-                                <use xlink:href="../img/sprite.svg#vk-mobile"></use>
+                              <svg class="footer-social-icon footer-social-icon--vk" >
+                                <use xlink:href="../img/sprite.svg#vk"></use>
                                 </svg>
                               <span class="visally-hidden" hidden>Мы в контакте</span>
                             </a>
                         </li>
                         <li class="social__item">
                             <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
-                              <svg class="footer-social-icon-desktop" width="23" height="23" >
-                                <use xlink:href="../img/sprite.svg#instagram-tablet"></use>
-                                </svg>
-                              <svg class="footer-social-icon-tablet" width="23" height="23" >
-                                <use xlink:href="../img/sprite.svg#instagram-tablet"></use>
-                                </svg>
-                              <svg class="footer-social-icon-mobile" width="16" height="16" >
-                                <use xlink:href="../img/sprite.svg#instagram-mobile"></use>
+                              <svg class="footer-social-icon footer-social-icon--instagram" >
+                                <use xlink:href="../img/sprite.svg#instagram"></use>
                                 </svg>
                               <span class="visally-hidden" hidden>Мы в инстаграмме</span>
                             </a>
                         </li>
                         <li class="social__item">
                             <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
-                              <svg class="footer-social-icon-desktop" width="14" height="27" >
-                                <use xlink:href="../img/sprite.svg#facebook-tablet"></use>
-                                </svg>
-                              <svg class="footer-social-icon-tablet" width="14" height="27" >
-                                <use xlink:href="../img/sprite.svg#facebook-tablet"></use>
-                                </svg>
-                              <svg class="footer-social-icon-mobile" width="13" height="20" >
-                                <use xlink:href="../img/sprite.svg#facebook-mobile"></use>
+                              <svg class="footer-social-icon footer-social-icon--facebook" >
+                                <use xlink:href="../img/sprite.svg#facebook"></use>
                                 </svg>
                               <span class="visally-hidden" hidden>Мы в фейсбуке</span>
                             </a>
@@ -292,7 +278,7 @@
                 <div class="copyright">
                     <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
                       <span>HTML Academy</span>
-                      <svg class="academy-logo" width="27" height="34" viewBox="0 0 27 34" >
+                      <svg class="academy-logo" width="27" height="34"  >
                         <use xlink:href="../img/sprite.svg#html-academy-logo"></use>
                         </svg>
                     </a>
