@@ -91,7 +91,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <button class="button button--order" type="button">Заказать</button>
+                        <button class="button catalog__order" type="button">Заказать</button>
                     </li>
                     <li class="catalog__item">
                         <a class="catalog__link" href="product_2.html">
@@ -118,7 +118,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <button class="button button--order" type="button">Заказать</button>
+                        <button class="button catalog__order" type="button">Заказать</button>
                     </li>
                     <li class="catalog__item">
                         <a class="catalog__link" href="product_3.html">
@@ -145,7 +145,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <button class="button button--order" type="button">Заказать</button>
+                        <button class="button catalog__order" type="button">Заказать</button>
                     </li>
                     <li class="catalog__item">
                         <a class="catalog__link" href="product_4.html">
@@ -172,7 +172,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <button class="button button--order" type="button">Заказать</button>
+                        <button class="button catalog__order" type="button">Заказать</button>
                     </li>
                     <li class="catalog__item">
                         <a class="catalog__link" href="product_5.html">
@@ -199,7 +199,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <button class="button button--order" type="button">Заказать</button>
+                        <button class="button catalog__order" type="button">Заказать</button>
                     </li>
                     <li class="catalog__item">
                         <a class="catalog__link" href="product_6.html">
@@ -226,7 +226,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <button class="button button--order" type="button">Заказать</button>
+                        <button class="button catalog__order" type="button">Заказать</button>
                     </li>
                     <li class="catalog__item">
                         <a class="catalog__link catalog__link--rice" href="product_7.html">
@@ -253,12 +253,12 @@
                                 </li>
                             </ul>
                         </div>
-                        <button class="button button--order" type="button">Заказать</button>
+                        <button class="button catalog__order" type="button">Заказать</button>
                     </li>
                     <li class="catalog__item catalog__item--more">
-                        <a class="catalog__link-all" href="#">Показать еще 100500 товаров</a>
+                        <a class="catalog__link-all" href="products.html">Показать еще 100500 товаров</a>
                         <p class="catalog__text">На самом деле вкусов гораздо больше!</p>
-                        <button class="button catalog__button">Показать всё</button>
+                        <a class="button catalog__button" href="products.html">Показать всё</a >
                     </li>
                 </ul>
             </section>
@@ -296,7 +296,7 @@
                             <span class="recommended__number">1 упаковка(30 г)</span>
                             <span class="recommended__price">300 Р.</span>
                         </div>
-                        <button class="button  button--recommended" type="button">Заказать</button>
+                        <button class="button  recommended__order" type="button">Заказать</button>
                     </li>
                 </ul>
               </div>
@@ -329,62 +329,44 @@
               </svg>
               </a>
             </div>
-            <div class="social">
+            <div class="page-footer__social">
               <h2 class="visually-hidden" hidden>Социальные сети</h2>
-              <ul class="social__list">
-                  <li class="social__item">
-                      <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-                        <svg class="footer-social-icon-desktop" width="29" height="17" >
-                          <use xlink:href="../img/sprite.svg#vk-tablet"></use>
-                          </svg>
-                        <svg class="footer-social-icon-tablet" width="29" height="17" >
-                          <use xlink:href="../img/sprite.svg#vk-tablet"></use>
-                          </svg>
-                        <svg class="footer-social-icon-mobile" width="23" height="13" >
-                          <use xlink:href="../img/sprite.svg#vk-mobile"></use>
+              <ul class="page-footer__social__list">
+                  <li class="page-footer__social__item">
+                      <a class="page-footer__social__link page-footer__social__link--vkontakte" href="https://vk.com/htmlacademy">
+                        <svg class="page-footer__social-icon page-footer__social-icon--vk" >
+                          <use xlink:href="../img/sprite.svg#vk"></use>
                           </svg>
                         <span class="visally-hidden" hidden>Мы в контакте</span>
                       </a>
                   </li>
-                  <li class="social__item">
-                      <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
-                        <svg class="footer-social-icon-desktop" width="23" height="23" >
-                          <use xlink:href="../img/sprite.svg#instagram-tablet"></use>
-                          </svg>
-                        <svg class="footer-social-icon-tablet" width="23" height="23" >
-                          <use xlink:href="../img/sprite.svg#instagram-tablet"></use>
-                          </svg>
-                        <svg class="footer-social-icon-mobile" width="16" height="16" >
-                          <use xlink:href="../img/sprite.svg#instagram-mobile"></use>
+                  <li class="page-footer__social__item">
+                      <a class="page-footer__social__link page-footer__social__link--instagram" href="https://www.instagram.com/htmlacademy">
+                        <svg class="page-footer__social-icon page-footer__social-icon--instagram" >
+                          <use xlink:href="../img/sprite.svg#instagram"></use>
                           </svg>
                         <span class="visally-hidden" hidden>Мы в инстаграмме</span>
                       </a>
                   </li>
-                  <li class="social__item">
-                      <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
-                        <svg class="footer-social-icon-desktop" width="14" height="27" >
-                          <use xlink:href="../img/sprite.svg#facebook-tablet"></use>
-                          </svg>
-                        <svg class="footer-social-icon-tablet" width="14" height="27" >
-                          <use xlink:href="../img/sprite.svg#facebook-tablet"></use>
-                          </svg>
-                        <svg class="footer-social-icon-mobile" width="13" height="20" >
-                          <use xlink:href="../img/sprite.svg#facebook-mobile"></use>
+                  <li class="page-footer__social__item">
+                      <a class="page-footer__social__link page-footer__social__link--facebook" href="https://www.facebook.com/htmlacademy">
+                        <svg class="page-footer__social-icon page-footer__social-icon--facebook" >
+                          <use xlink:href="../img/sprite.svg#facebook"></use>
                           </svg>
                         <span class="visally-hidden" hidden>Мы в фейсбуке</span>
                       </a>
                   </li>
               </ul>
           </div>
-              <div class="copyright">
-                  <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-                    <span>HTML Academy</span>
-                    <svg class="academy-logo" width="27" height="34"  >
-                        <use xlink:href="../img/sprite.svg#html-academy-logo"></use>
-                        </svg>
-                  </a>
-              </div>
+          <div class="page-footer__copyright">
+              <a class="page-footer__copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+                <span>HTML Academy</span>
+                <svg class="page-footer__academy-logo" width="27" height="34"  >
+                  <use xlink:href="../img/sprite.svg#html-academy-logo"></use>
+                  </svg>
+              </a>
           </div>
+      </div>
       </footer>
       <script>
         var navMain = document.querySelector('.main-nav');
