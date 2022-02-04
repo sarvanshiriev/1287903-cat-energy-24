@@ -199,15 +199,21 @@
                         </div>
                         <div class="example__slide2">
                           <picture>
-                            <source type="image/webp" media="(min-width:1440px)"  srcset="img/cat-skinny-desktop.webp 1x, img/cat-skinny-desktop@2x.webp 2x " >
-                            <source type="image/webp" media="(min-width:768px)"  srcset="img/cat-skinny-tablet.webp 1x, img/cat-skinny-tablet@2x.webp 2x " >
-                            <source type="image/webp" srcset="img/cat-skinny.webp 1x, img/cat-skinny@2x.webp 2x " >
-                            <source media="(min-width:1440px)" srcset="img/cat-skinny-desktop.png 1x , img/cat-skinny-desktop@2x.png 2x" >
-                            <source media="(min-width:768px)" srcset="img/cat-skinny-tablet.png 1x , img/cat-skinny-tablet@2x.png 2x" >
-                            <img class="example__image" src="img/cat-skinny.png" srcset="img/cat-skinny@2x.png 2x"  alt="Худой кот" />
+                            <source type="image/webp" media="(min-width:1440px)"  srcset="img/cat_and_cat.webp 1x, img/cat_and_cat@2x.webp 2x " >
+                            <source type="image/webp" media="(min-width:768px)"  srcset="img/cat_and_cat.webp 1x, img/cat_and_cat@2x.webp 2x " >
+                            <source type="image/webp" srcset="img/cat_and_cat.webp 1x, img/cat_and_cat@2x.webp 2x " >
+                            <source media="(min-width:1440px)" srcset="img/cat_and_cat.png 1x , img/cat_and_cat@2x.png 2x" >
+                            <source media="(min-width:768px)" srcset="img/cat_and_cat.png 1x , img/cat_and_cat@2x.png 2x" >
+                            <img class="example__image" src="img/cat_and_cat.png" srcset="img/cat-skinny@2x.png 2x"  alt="Худой кот" />
                           </picture>
                         </div>
                         <div class="example__range">
+                          <div class="example__button">
+                            <button class="example__button__slider" type="button">
+                              <span class="visually-hidden">Изменить фотографию</span>
+                          </button>
+                          </div>
+                          <div class="example__range__container">
                           <ul class="example__range__list">
                         <li class="example__range__item example__range__item--slide1">
                           <label for="slide1">Было</label>
@@ -216,11 +222,7 @@
                           <label for="slide2">Стало</label>
                         </li>
                         </ul>
-                        </div>
-                        <div class="example__button">
-                          <button class="example__button__slider" type="button">
-                            <span class="visually-hidden">Изменить фотографию</span>
-                        </button>
+                      </div>
                         </div>
                       </div>
                     </div>
@@ -290,21 +292,6 @@
                 </div>
             </div>
         </footer>
-        <script>
-          var navMain = document.querySelector('.main-nav');
-          var navToggle = document.querySelector('.main-nav__toggle');
-
-          navMain.classList.remove('main-nav--nojs');
-
-          navToggle.addEventListener('click', function() {
-            if (navMain.classList.contains('main-nav--closed')) {
-              navMain.classList.remove('main-nav--closed');
-              navMain.classList.add('main-nav--opened');
-            } else {
-              navMain.classList.add('main-nav--closed');
-              navMain.classList.remove('main-nav--opened');
-            }
-          });
-        </script>
+        <!-- <script src='js/script.js'></script> -->
     </body>
 </html>

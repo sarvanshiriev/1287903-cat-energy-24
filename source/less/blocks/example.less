@@ -240,6 +240,7 @@
 .example__range {
   margin-top: 17px;
   margin-left: 40px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     margin-top: 29px;
@@ -315,16 +316,16 @@
   }
 }
 
-.example__range__input--slide1[type="radio"]:checked ~ .example__range .example__range__item--slide1::after {
+.example__button__slider {
   position: absolute;
-  content: "";
   width: 36px;
   height: 6px;
   background: @green;
   border-radius: 6px;
-  left: 63px;
+  border: none;
+  left: 62px;
   top: 8px;
-  z-index: 1;
+  z-index: 2;
 
   @media (min-width: @tablet-width) {
     background: @white;
@@ -333,89 +334,42 @@
     width: 34px;
     height: 34px;
     border-radius: 50%;
-    left: 60px;
-    top: -2px;
+    left: 280px;
+    top: -3px;
+    &::after {
+          position: absolute;
+          background: @green;
+          content: "";
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          left: 12px;
+          top: 12px;
+          z-index: 2;
+        }
   }
 }
 
-.example__range__input--slide1[type="radio"]:checked ~ .example__range .example__range__item--slide1::before {
+.example__button__slider:active{
   @media (min-width: @tablet-width) {
-    position: absolute;
-    background: @green;
-    content: "";
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    left: 73px;
-    top: 11px;
-    z-index: 2;
+  border: 1px solid #68B738;
   }
 }
-
-.example__range__input--slide2[type="radio"]:checked ~ .example__range .example__range__item--slide2::after {
-  position: absolute;
-  content: "";
-  width: 36px;
-  height: 6px;
-  background: @green;
-  border-radius: 6px;
-  left: -62px;
-  top: 8px;
-  z-index: 1;
-
+.example__button__slider:focus{
   @media (min-width: @tablet-width) {
-    background: @white;
-    border: 1px solid @table-gray;
-    box-sizing: border-box;
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
-    left: -43px;
-    top: -2px;
+  border: 1px solid #68B738;
   }
 }
 
-.example__range__input--slide2[type="radio"]:checked ~ .example__range:active .example__range__item--slide2::after,
-.example__range__input--slide1[type="radio"]:checked ~ .example__range:active .example__range__item--slide1::after {
-  @media (min-width: @tablet-width) {
-    border: 1px solid @green;
-  }
-}
-
-.example__range__input--slide2[type="radio"]:checked ~ .example__range .example__range__item--slide2::before {
-  @media (min-width: @tablet-width) {
-    position: absolute;
-    background: @green;
-    content: "";
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    left: -29px;
-    top: 11px;
-    z-index: 2;
-  }
-}
-
-.example__slide1,
 .example__slide2 {
   display: none;
-
   @media (min-width: @tablet-width) {
-    margin-top: -170px;
-    margin-left: 29px;
-    transform: rotate(3deg);
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-top: -234px;
-    margin-left: 50px;
+    display: block;
   }
 }
 
-.example__range__input--slide1[type="radio"]:checked ~ .example__slide1 {
-  display: block;
-}
-
-.example__range__input--slide2[type="radio"]:checked ~ .example__slide2 {
-  display: block;
+.example__slide1 {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }

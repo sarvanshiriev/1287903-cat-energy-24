@@ -30,6 +30,7 @@
     justify-content: space-between;
     padding: 0;
     margin: 0;
+    flex-wrap: wrap;
   }
 
   @media (min-width: @desktop-width) {
@@ -144,6 +145,22 @@
   }
 }
 
+.main-nav--nojs .main-nav__item {
+  @media (max-width: @mobile-width-only){
+  display: block;
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  @media (max-width: @mobile-width-only){
+  display: none;
+  }
+}
+// .main-nav--nojs .main-nav__wrapper {
+//   @media (max-width: @mobile-width-only){
+//     position: relative;
+//     }
+// }
 .main-nav--opened .main-nav__toggle::before {
   position: absolute;
   content: "";
@@ -165,3 +182,4 @@
   background-color: @black;
   transform: rotate(-45deg);
 }
+
