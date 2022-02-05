@@ -161,8 +161,19 @@
   @media (min-width: @desktop-width) {
     background-color: transparent;
     width: 610px;
-    margin-top: -15px;
+    margin-top: -250px;
     padding-bottom: 55px;
+    margin-left: 179px;
+  }
+}
+
+.example__slider {
+  @media (min-width: @tablet-width) {
+    margin-top: -168px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
   }
 }
 
@@ -291,6 +302,11 @@
 
   @media (min-width: @tablet-width) {
     width: 570px;
+    margin-left: -18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: -43px;
   }
 }
 
@@ -334,35 +350,42 @@
     width: 34px;
     height: 34px;
     border-radius: 50%;
-    left: 280px;
+    left: 250px;
     top: -3px;
+
     &::after {
-          position: absolute;
-          background: @green;
-          content: "";
-          width: 8px;
-          height: 8px;
-          border-radius: 50%;
-          left: 12px;
-          top: 12px;
-          z-index: 2;
-        }
+      position: absolute;
+      background: @green;
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      left: 12px;
+      top: 12px;
+      z-index: 2;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 224px;
   }
 }
 
-.example__button__slider:active{
+.example__button__slider:active {
   @media (min-width: @tablet-width) {
-  border: 1px solid #68B738;
+    border: 1px solid @green;
   }
 }
-.example__button__slider:focus{
+
+.example__button__slider:focus {
   @media (min-width: @tablet-width) {
-  border: 1px solid #68B738;
+    border: 1px solid @green;
   }
 }
 
 .example__slide2 {
   display: none;
+
   @media (min-width: @tablet-width) {
     display: block;
   }

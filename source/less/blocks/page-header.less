@@ -45,7 +45,7 @@
   @media (min-width: @desktop-width) {
     width: 1220px;
     margin: 0 auto;
-    margin-bottom: 31px;
+    margin-bottom: 75px;
   }
 }
 
@@ -59,13 +59,13 @@
 
 .page-header__container {
   position: relative;
-  padding: 10px 20px 14px 20px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-right: 0;
   border-bottom: 1px solid @line-gray;
+  flex-wrap: wrap;
 
   @media (min-width: @tablet-width) {
     margin: 0;
@@ -85,6 +85,10 @@
 }
 
 .page-header__logo-text {
+  margin-right: auto;
+  margin-top: 11px;
+  margin-left: auto;
+
   @media (min-width: @tablet-width) {
     display: none;
   }
@@ -117,6 +121,16 @@
 
   @media (min-width: @desktop-width) {
     display: block;
+  }
+}
+
+.page-header__logo {
+  margin-left: 20px;
+  margin-top: 11px;
+  margin-bottom: 17px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
   }
 }
 
